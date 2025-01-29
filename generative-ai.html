@@ -1,196 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>codeReso - AI for Coders</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-        }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+      }
 
-        section {
-            background-color: white;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        }
+      section {
+        background-color: white;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
 
-        h2 {
-            color: #007bff;
-        }
+      h2 {
+        color: #007bff;
+      }
 
-        h4 {
-            color: #555;
-        }
+      h4 {
+        color: #555;
+      }
 
-        ul {
-            list-style-type: disc;
-            margin-left: 20px;
-        }
+      ul {
+        list-style-type: disc;
+        margin-left: 20px;
+      }
 
-        ul li {
-            margin-bottom: 5px;
-        }
+      ul li {
+        margin-bottom: 5px;
+      }
     </style>
-</head>
+  </head>
 
-<body class="font">
+  <body class="font">
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-          <div class="container">
-            <a class="navbar-brand fw-bold" href="/">
-              <span class="visually-hidden">codeReso Home</span>
-              //codeReso
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="get-started.html">Get Started</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="coding-faq.html">Coding FAQs</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="https://discord.gg/T2agJqxrsj" rel="noopener noreferrer">Community</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="https://pythontutor.com/" rel="noopener noreferrer">Code Visualization</a>
-                </li>
-              </ul>
-            </div>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand fw-bold" href="/">
+            <span class="visually-hidden">codeReso Home</span>
+            //codeReso
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="get-started.html">Get Started</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="coding-faq.html">Coding FAQs</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://discord.gg/T2agJqxrsj"
+                  rel="noopener noreferrer"
+                  >Community</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://pythontutor.com/"
+                  rel="noopener noreferrer"
+                  >Code Visualization</a
+                >
+              </li>
+            </ul>
           </div>
-        </nav>
-      </header>
+        </div>
+      </nav>
+    </header>
 
     <div class="container py-5">
-        <h1 class="text-center mb-5">
-            Boost Coding with Generative AI 🤖</h1>
+      <h1 class="text-center mb-5">Boost Coding with Generative AI 🤖</h1>
 
-        <!-- 1. Code Assistance and Generation -->
-        <section class="mb-4">
-            <h2>1. Code Assistance and Generation</h2>
-            <h4>Efficiency:</h4>
-            <ul>
-                <li>Quickly generate boilerplate code, repetitive patterns, or standard modules.</li>
-                <li>Identify bugs and suggest fixes.</li>
-                <li>Refactor existing code for better performance and readability.</li>
-            </ul>
-            <h4>Creativity:</h4>
-            <ul>
-                <li>Generate multiple approaches to solve a problem.</li>
-                <li>Convert code from one language to another to explore cross-platform solutions.</li>
-            </ul>
-        </section>
+      <!-- 1. Code Assistance and Generation -->
+      <section class="mb-4">
+        <h2>1. Code Assistance and Generation</h2>
+        <h4>Efficiency:</h4>
+        <ul>
+          <li>
+            Quickly generate boilerplate code, repetitive patterns, or standard
+            modules.
+          </li>
+          <li>Identify bugs and suggest fixes.</li>
+          <li>
+            Refactor existing code for better performance and readability.
+          </li>
+        </ul>
+        <h4>Creativity:</h4>
+        <ul>
+          <li>Generate multiple approaches to solve a problem.</li>
+          <li>
+            Convert code from one language to another to explore cross-platform
+            solutions.
+          </li>
+        </ul>
+      </section>
 
-        <!-- 2. Learning and Skill Development -->
-        <section class="mb-4">
-            <h2>2. Learning and Skill Development</h2>
-            <h4>Efficiency:</h4>
-            <ul>
-                <li>Create step-by-step guides or examples for new concepts.</li>
-                <li>Generate tailored coding challenges and solutions.</li>
-            </ul>
-            <h4>Creativity:</h4>
-            <ul>
-                <li>Explore new programming concepts without starting from scratch.</li>
-                <li>Gain unique perspectives or analogies for understanding complex topics.</li>
-            </ul>
-        </section>
+      <!-- 2. Learning and Skill Development -->
+      <section class="mb-4">
+        <h2>2. Learning and Skill Development</h2>
+        <h4>Efficiency:</h4>
+        <ul>
+          <li>Create step-by-step guides or examples for new concepts.</li>
+          <li>Generate tailored coding challenges and solutions.</li>
+        </ul>
+        <h4>Creativity:</h4>
+        <ul>
+          <li>
+            Explore new programming concepts without starting from scratch.
+          </li>
+          <li>
+            Gain unique perspectives or analogies for understanding complex
+            topics.
+          </li>
+        </ul>
+      </section>
 
-        <!-- 3. Documentation and Communication -->
-        <section class="mb-4">
-            <h2>3. Documentation and Communication</h2>
-            <h4>Efficiency:</h4>
-            <ul>
-                <li>Generate comments, README files, and API documentation.</li>
-                <li>Draft professional communication and reports.</li>
-            </ul>
-            <h4>Creativity:</h4>
-            <ul>
-                <li>Create engaging documentation combining text, code samples, and visuals.</li>
-            </ul>
-        </section>
+      <!-- 3. Documentation and Communication -->
+      <section class="mb-4">
+        <h2>3. Documentation and Communication</h2>
+        <h4>Efficiency:</h4>
+        <ul>
+          <li>Generate comments, README files, and API documentation.</li>
+          <li>Draft professional communication and reports.</li>
+        </ul>
+        <h4>Creativity:</h4>
+        <ul>
+          <li>
+            Create engaging documentation combining text, code samples, and
+            visuals.
+          </li>
+        </ul>
+      </section>
 
-        <!-- 4. Testing and Quality Assurance -->
-        <section class="mb-4">
-            <h2>4. Testing and Quality Assurance</h2>
-            <h4>Efficiency:</h4>
-            <ul>
-                <li>Automatically generate comprehensive test cases.</li>
-                <li>Review code for potential errors or inefficiencies.</li>
-            </ul>
-            <h4>Creativity:</h4>
-            <ul>
-                <li>Generate unconventional test scenarios to ensure robust performance.</li>
-            </ul>
-        </section>
+      <!-- 4. Testing and Quality Assurance -->
+      <section class="mb-4">
+        <h2>4. Testing and Quality Assurance</h2>
+        <h4>Efficiency:</h4>
+        <ul>
+          <li>Automatically generate comprehensive test cases.</li>
+          <li>Review code for potential errors or inefficiencies.</li>
+        </ul>
+        <h4>Creativity:</h4>
+        <ul>
+          <li>
+            Generate unconventional test scenarios to ensure robust performance.
+          </li>
+        </ul>
+      </section>
 
-        <!-- 5. Project Ideation and Design -->
-        <section class="mb-4">
-            <h2>5. Project Ideation and Design</h2>
-            <h4>Efficiency:</h4>
-            <ul>
-                <li>Use AI for brainstorming features or UI/UX designs.</li>
-                <li>Create wireframes or visual prototypes quickly.</li>
-            </ul>
-            <h4>Creativity:</h4>
-            <ul>
-                <li>Explore innovative project concepts or market gaps.</li>
-                <li>Collaborate with AI for creative development approaches.</li>
-            </ul>
-        </section>
+      <!-- 5. Project Ideation and Design -->
+      <section class="mb-4">
+        <h2>5. Project Ideation and Design</h2>
+        <h4>Efficiency:</h4>
+        <ul>
+          <li>Use AI for brainstorming features or UI/UX designs.</li>
+          <li>Create wireframes or visual prototypes quickly.</li>
+        </ul>
+        <h4>Creativity:</h4>
+        <ul>
+          <li>Explore innovative project concepts or market gaps.</li>
+          <li>Collaborate with AI for creative development approaches.</li>
+        </ul>
+      </section>
 
-        <!-- 6. Problem-Solving and Debugging -->
-        <section class="mb-4">
-            <h2>6. Problem-Solving and Debugging</h2>
-            <h4>Efficiency:</h4>
-            <ul>
-                <li>Analyze error messages or logs for quick solutions.</li>
-                <li>Optimize algorithms or data structures.</li>
-            </ul>
-            <h4>Creativity:</h4>
-            <ul>
-                <li>Explore unconventional solutions or techniques.</li>
-            </ul>
-        </section>
+      <!-- 6. Problem-Solving and Debugging -->
+      <section class="mb-4">
+        <h2>6. Problem-Solving and Debugging</h2>
+        <h4>Efficiency:</h4>
+        <ul>
+          <li>Analyze error messages or logs for quick solutions.</li>
+          <li>Optimize algorithms or data structures.</li>
+        </ul>
+        <h4>Creativity:</h4>
+        <ul>
+          <li>Explore unconventional solutions or techniques.</li>
+        </ul>
+      </section>
 
-        <!-- 7. Workflow Optimization -->
-        <section class="mb-4">
-            <h2>7. Workflow Optimization</h2>
-            <h4>Efficiency:</h4>
-            <ul>
-                <li>Automate repetitive tasks with AI.</li>
-                <li>Generate project plans, timelines, or checklists.</li>
-            </ul>
-            <h4>Creativity:</h4>
-            <ul>
-                <li>Explore new tools or integrations with AI guidance.</li>
-            </ul>
-        </section>
-
+      <!-- 7. Workflow Optimization -->
+      <section class="mb-4">
+        <h2>7. Workflow Optimization</h2>
+        <h4>Efficiency:</h4>
+        <ul>
+          <li>Automate repetitive tasks with AI.</li>
+          <li>Generate project plans, timelines, or checklists.</li>
+        </ul>
+        <h4>Creativity:</h4>
+        <ul>
+          <li>Explore new tools or integrations with AI guidance.</li>
+        </ul>
+      </section>
     </div>
 
     <footer class="bg-dark text-white text-center py-3 mt-5">
-        <p class="mb-0">
-          codeReso | Built by
-          <a href="https://kamran-riyaz.github.io/" rel="noopener noreferrer" class="text-white fw-bold">Kamran Riyaz</a>
-        </p>
-      </footer>
-
-</body>
-
+      <p class="mb-0">
+        codeReso | Built by
+        <a
+          href="https://kamran-riyaz.github.io/"
+          rel="noopener noreferrer"
+          class="text-white fw-bold"
+          >Kamran Riyaz</a
+        >
+      </p>
+    </footer>
+  </body>
 </html>
